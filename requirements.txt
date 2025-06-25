@@ -1,0 +1,23 @@
+# DBOR Conformance Level 2 Test Suite Requirements
+# 
+# This project uses only Python standard library modules for core functionality.
+# The following packages are optional for development and testing enhancements.
+
+# Testing framework (optional - tests can also be run with unittest)
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Code quality tools (optional)
+flake8>=5.0.0
+black>=22.0.0
+mypy>=0.991
+
+# Documentation (optional)
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+
+# Performance profiling (optional)
+cProfile
+
+# Note: The core DBOR encoder/decoder implementation has zero external dependencies
+# and can be used with just the Python standard library.

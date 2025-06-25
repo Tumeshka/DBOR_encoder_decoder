@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run DBOR Tests",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"tests/test_roundtrip.py"
+			],
+			"group": "test",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
