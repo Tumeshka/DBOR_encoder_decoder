@@ -174,53 +174,11 @@ The test suite includes:
 - Validation for conformance level 2 constraints
 - Python object conversion utilities
 
-## 🐛 Error Handling
-
-The implementation includes robust error handling:
-
-- **OverflowError**: Integers outside conformance level 2 range
-- **TypeError**: Unsupported value types
-- **DBORDecodeError**: Invalid or corrupted DBOR data
-- **UnicodeDecodeError**: Invalid UTF-8 sequences
-- **ValueError**: Malformed data structures
-
-## 🚧 Future Extensions
-
-### Level 3 Support
-- Add `BinaryRationalValue` (floating-point)
-- Add `MinusZeroValue` support
-- Extended numeric types
-
-### Advanced Testing
-- Fuzz testing with malformed inputs
-- Performance benchmarking
-- Cross-language compatibility testing
-
-### Tools
-- DBOR data inspector/viewer
-- Canonical form validator
-- Compression ratio analyzer
 
 ## 📋 Requirements
 
 See `requirements.txt` for dependencies (currently none - uses only Python standard library).
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📚 References
-
-- [DBOR 1.0.0 Specification](https://dbor.org/)
-- [Conformance Level 2 Requirements](https://dbor.org/spec/conformance.html#level-2)
 
 ## 🏃‍♂️ Quick Start Example
 
@@ -267,3 +225,7 @@ if __name__ == "__main__":
 ```
 
 Save this as `quickstart.py` and run with `python quickstart.py` to see DBOR encoding in action!
+
+## 📝 Interactive Testing with Jupyter Notebook
+
+You can experiment with DBOR encoding and decoding interactively using the `interactive_dbor.ipynb` notebook included in the project. Open the notebook in Jupyter, and you'll find cells for encoding and decoding various values, visualizing byte representations, and running round-trip tests. The notebook also provides utilities to load test vectors, inspect results, and export your test outcomes to a CSV file for further analysis. After running your tests, simply use the provided code cell to save the results as a CSV, making it easy to review or share your findings.
